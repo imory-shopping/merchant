@@ -1,4 +1,4 @@
-package com.imory.test.controller;
+package com.imory.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.web.bind.annotation.RequestMapping;

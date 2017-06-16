@@ -62,6 +62,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.42</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.31</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>merchant</finalName>

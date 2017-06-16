@@ -1,4 +1,4 @@
-package com.imory.test.exception;
+package com.imory.exception;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

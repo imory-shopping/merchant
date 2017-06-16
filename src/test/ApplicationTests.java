@@ -1,6 +1,6 @@
-import com.imory.test.App;
-import com.imory.test.bean.UserDemo;
-import com.imory.test.service.UserDemoService;
+import com.imory.App;
+import com.imory.bean.UserDemo;
+import com.imory.service.UserDemoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

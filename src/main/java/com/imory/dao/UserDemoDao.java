@@ -1,6 +1,6 @@
-package com.imory.test.dao;
+package com.imory.dao;
 
-import com.imory.test.bean.UserDemo;
+import com.imory.bean.UserDemo;
 
 /**
  * <p>名称</p>

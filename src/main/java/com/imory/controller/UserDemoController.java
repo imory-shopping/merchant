@@ -1,7 +1,7 @@
-package com.imory.test.controller;
+package com.imory.controller;
 
-import com.imory.test.bean.UserDemo;
-import com.imory.test.service.UserDemoService;
+import com.imory.bean.UserDemo;
+import com.imory.service.UserDemoService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

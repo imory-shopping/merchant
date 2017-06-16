@@ -1,7 +1,7 @@
-package com.imory.test.dao.impl;
+package com.imory.dao.impl;
 
-import com.imory.test.bean.UserDemo;
-import com.imory.test.dao.UserDemoDao;
+import com.imory.bean.UserDemo;
+import com.imory.dao.UserDemoDao;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -19,7 +19,7 @@ import javax.annotation.Resource;
  * @Date 2017/6/16
  */
 @Repository
-public class UserDemoDaoImpl implements UserDemoDao{
+public class UserDemoDaoImpl implements UserDemoDao {
 
     @Resource
     private JdbcTemplate jdbcTemplate;

@@ -1,8 +1,8 @@
-package com.imory.test.service;
+package com.imory.service;
 
-import com.imory.test.bean.UserDemo;
-import com.imory.test.dao.UserDemoDao;
-import com.imory.test.dao.UserDemoRepository;
+import com.imory.dao.UserDemoDao;
+import com.imory.dao.UserDemoRepository;
+import com.imory.bean.UserDemo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

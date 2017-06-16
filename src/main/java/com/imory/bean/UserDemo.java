@@ -1,4 +1,4 @@
-package com.imory.test.bean;
+package com.imory.bean;
 
 import javax.persistence.*;
 
