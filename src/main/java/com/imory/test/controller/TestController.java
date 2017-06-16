@@ -1,9 +1,7 @@
 package com.imory.test.controller;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>名称</p>
@@ -14,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0
  * @Date 2017/6/15
  */
-@RestController
-@SpringBootApplication
+//@RestController //返回json字符串的数据，直接可以编写RESTFul的接口；
+//@SpringBootApplication //申明让spring boot自动给程序进行必要的配置，等价于以默认属性使用@Configuration，@EnableAutoConfiguration和@ComponentScan
 public class TestController {
 
     @RequestMapping("/")
