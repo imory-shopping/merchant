@@ -2,6 +2,7 @@ package com.imory.test.controller;
 
 import com.imory.test.bean.UserDemo;
 import com.imory.test.service.UserDemoService;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,5 +38,17 @@ public class UserDemoController {
         userDemo.setUserName("测试用户2");
         userDemoService.save(userDemo);
         return "ok.UserDemoController.save";
+    }
+
+    @RequestMapping("/get/{id}")
+    public UserDemo getUser(@PathVariable("id") Integer id)
+    {
+        return userDemoService.getUserById(id);
+    }
+
+    @RequestMapping("/get")
+    public UserDemo getUserById(Integer id)
+    {
+        return userDemoService.getUserById(id);
     }
 }

@@ -1,6 +1,7 @@
 package com.imory.test.service;
 
 import com.imory.test.bean.UserDemo;
+import com.imory.test.dao.UserDemoDao;
 import com.imory.test.dao.UserDemoRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,10 +23,18 @@ public class UserDemoService {
     @Resource
     private UserDemoRepository userDemoRepository;
 
+    @Resource
+    private UserDemoDao userDemoDao;
+
     @Transactional
     public void save(UserDemo userDemo)
     {
         userDemoRepository.save(userDemo);
+    }
+
+    public UserDemo getUserById(Integer id)
+    {
+        return userDemoDao.getUserById(id);
     }
 
 }
