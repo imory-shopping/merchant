@@ -1,5 +1,7 @@
 package com.imory.controller;
 
+import org.springframework.context.EnvironmentAware;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2017/6/15
  */
 @RestController
-public class HelloController {
+public class HelloController implements EnvironmentAware{
 
     @RequestMapping("/")
     public String hello(){
@@ -24,5 +26,14 @@ public class HelloController {
     public int zeroException(){
         System.out.println("111111");
         return 100/0;
+    }
+
+    @Override
+    public void setEnvironment(Environment environment)
+    {
+        System.out.println("===========HelloController===========");
+        String s= environment.getProperty("JAVA_HOME");
+        System.out.println(s);
+        System.out.println("===========HelloController===========");
     }
 }
