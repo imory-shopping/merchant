@@ -1,10 +1,12 @@
 package com.imory;
 
+import com.imory.servlet.MyServlet1;
 import com.imory.util.SpringUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -44,5 +46,11 @@ public class App extends WebMvcConfigurerAdapter{
     {
         super.addResourceHandlers(registry);
         //registry.addResourceHandler("/**").addResourceLocations("/");
+    }
+
+    @Bean
+    public ServletRegistrationBean myServlet1()
+    {
+        return new ServletRegistrationBean(new MyServlet1(),"/myServlet1/*");
     }
 }
