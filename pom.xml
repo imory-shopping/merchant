@@ -90,10 +90,6 @@
                     <source>1.8</source>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin </artifactId>
-            </plugin>
             <!--热部署-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -106,6 +102,12 @@
                         <version>1.2.7.RELEASE</version>
                     </dependency>
                 </dependencies>
+                <configuration>
+                    <jvmArguments>
+                        -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
+                    </jvmArguments>
+                    <executable>true</executable>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
