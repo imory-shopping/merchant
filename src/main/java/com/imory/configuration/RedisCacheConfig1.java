@@ -28,8 +28,8 @@ import java.lang.reflect.Method;
  * @version 1.0
  * @Date 2017/7/6
  */
-@Configuration
-@EnableCaching //启用缓存，这个注解很重要；
+//@Configuration
+//@EnableCaching //启用缓存，这个注解很重要；
 public class RedisCacheConfig1 extends CachingConfigurerSupport {
 
     /**

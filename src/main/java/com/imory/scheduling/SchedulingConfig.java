@@ -20,6 +20,6 @@ public class SchedulingConfig {
     //@Scheduled(fixedRate=10000) // 每10秒执行一次
     @Scheduled(cron = "0/10 * * * * ?") // 每10秒执行一次
     public void scheduler() {
-        System.out.println(">>>>>>>>> SchedulingConfig.scheduler()");
+        //System.out.println(">>>>>>>>> SchedulingConfig.scheduler()");
     }
 }
